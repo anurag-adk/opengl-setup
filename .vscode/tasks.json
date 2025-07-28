@@ -8,7 +8,7 @@
       "args": [
         "-g",
         "-o",
-        "${fileDirname}/${fileBasenameNoExtension}.exe",
+        "${fileBasenameNoExtension}.exe",
         "-std=c++17",
         "-I${workspaceFolder}/include",
         "-L${workspaceFolder}/lib",
