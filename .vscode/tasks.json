@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "C/C++: g++.exe build active file",
+      "type": "shell",
+      "command": "C:/MingW/mingw64/bin/g++.exe",
+      "args": [
+        "-g",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}.exe",
+        "-std=c++17",
+        "-I${workspaceFolder}/include",
+        "-L${workspaceFolder}/lib",
+        "${workspaceFolder}/src/main.cpp",
+        "${workspaceFolder}/src/glad.c",
+        "-lglfw3dll",
+        "-lopengl32",
+        "-lgdi32",
+        "-luser32",
+        "-lkernel32"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "compiler: C:/MingW/mingw64/bin/g++.exe"
+    }
+  ]
+}
